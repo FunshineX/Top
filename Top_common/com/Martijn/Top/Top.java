@@ -1,6 +1,7 @@
 package com.Martijn.Top;
 
 import com.Martijn.Top.block.ModBlocks;
+import com.Martijn.Top.core.handler.LocalizationHandler;
 import com.Martijn.Top.lib.Reference;
 
 import cpw.mods.fml.common.Mod;
@@ -32,10 +33,12 @@ import cpw.mods.fml.common.network.NetworkMod;
 		clientSideRequired = true)
 
 public class Top {
-	
+	 
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event){
 		ModBlocks.BlocksInit();
+		
+		LocalizationHandler.loadLanguages();
 	}
 	@Init
 	public void init(FMLInitializationEvent event){

@@ -10,14 +10,14 @@ package com.Martijn.Top.block;
  * 
  */
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class NewBlock extends Block {
+public class NewBlock extends BlockTop {
 	public NewBlock(int id){
 		super(id, Material.rock);
 		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setUnlocalizedName("NewBlock");
 	}
 
 }
