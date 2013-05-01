@@ -13,11 +13,12 @@ package com.Martijn.Top.block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
+import com.Martijn.Top.lib.Strings;
+
 public class NewBlock extends BlockTop {
 	public NewBlock(int id){
 		super(id, Material.rock);
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setUnlocalizedName("NewBlock");
+		this.setUnlocalizedName(Strings.NEWBLOCK_NAME);
 	}
-
 }

@@ -1,6 +1,9 @@
 package com.Martijn.Top;
 
+import java.io.File;
+
 import com.Martijn.Top.block.ModBlocks;
+import com.Martijn.Top.configuration.ConfigurationHander;
 import com.Martijn.Top.core.handler.LocalizationHandler;
 import com.Martijn.Top.core.proxy.CommonProxy;
 import com.Martijn.Top.lib.Reference;
@@ -31,6 +34,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 		version = Reference.VERSION)
 
 @NetworkMod(
+		channels = {Reference.CHANNEL_NAME},
 		serverSideRequired = false,
 		clientSideRequired = true)
 
@@ -46,6 +50,9 @@ public class Top {
 		ModBlocks.BlocksInit();
 		
 		LocalizationHandler.loadLanguages();
+		
+		ConfigurationHander.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
+
 	}
 	@Init
 	public void init(FMLInitializationEvent event){
