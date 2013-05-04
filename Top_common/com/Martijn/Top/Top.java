@@ -6,6 +6,7 @@ import com.Martijn.Top.block.ModBlocks;
 import com.Martijn.Top.configuration.ConfigurationHander;
 import com.Martijn.Top.core.handler.LocalizationHandler;
 import com.Martijn.Top.core.proxy.CommonProxy;
+import com.Martijn.Top.item.ModItems;
 import com.Martijn.Top.lib.Reference;
 
 import cpw.mods.fml.common.Mod;
@@ -47,12 +48,14 @@ public class Top {
 	
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event){
-		ModBlocks.BlocksInit();
-		
 		LocalizationHandler.loadLanguages();
 		
 		ConfigurationHander.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
-
+		
+		ModBlocks.BlocksInit();
+		
+		ModItems.ItemInit();
+		
 	}
 	@Init
 	public void init(FMLInitializationEvent event){

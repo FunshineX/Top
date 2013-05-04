@@ -1,0 +1,21 @@
+package com.Martijn.Top.item;
+
+import com.Martijn.Top.lib.Reference;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.item.Item;
+
+public class ItemTop extends Item{
+	public ItemTop(int id){
+		super(id);
+	}
+	
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void registerIcons(IconRegister register){
+		itemIcon = register.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
+	}
+}

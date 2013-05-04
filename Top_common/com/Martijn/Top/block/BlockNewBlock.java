@@ -15,8 +15,8 @@ import net.minecraft.creativetab.CreativeTabs;
 
 import com.Martijn.Top.lib.Strings;
 
-public class NewBlock extends BlockTop {
-	public NewBlock(int id){
+public class BlockNewBlock extends BlockTop {
+	public BlockNewBlock(int id){
 		super(id, Material.rock);
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		this.setUnlocalizedName(Strings.NEWBLOCK_NAME);

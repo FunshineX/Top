@@ -3,4 +3,5 @@
 <properties version="1.0">
 	<comment>English (en_US) Localization File</comment>
 	<entry key="tile.NewBlock.name">New Block</entry>
+	<entry key="item.BlackStick.name">Black Stick</entry>
 </properties>

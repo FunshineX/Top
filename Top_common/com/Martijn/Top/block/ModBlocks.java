@@ -17,12 +17,12 @@ import com.Martijn.Top.lib.BlockIds;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
-	
-	
+
+
 	public static Block NewBlock;
 	public static void BlocksInit(){
-		NewBlock = new NewBlock(BlockIds.NEWBLOCK_ID);
-		
+		NewBlock = new BlockNewBlock(BlockIds.NEWBLOCK_ID);
+
 		GameRegistry.registerBlock(NewBlock);
 	}
 }
