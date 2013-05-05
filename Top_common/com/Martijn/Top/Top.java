@@ -2,10 +2,13 @@ package com.Martijn.Top;
 
 import java.io.File;
 
+import net.minecraft.creativetab.CreativeTabs;
+
 import com.Martijn.Top.block.ModBlocks;
 import com.Martijn.Top.configuration.ConfigurationHander;
 import com.Martijn.Top.core.handler.LocalizationHandler;
 import com.Martijn.Top.core.proxy.CommonProxy;
+import com.Martijn.Top.creativetab.TabTop;
 import com.Martijn.Top.item.ModItems;
 import com.Martijn.Top.lib.Reference;
 
@@ -45,6 +48,8 @@ public class Top {
 			clientSide = Reference.CLIENT_PROXY_LOCATION,
 			serverSide = Reference.COMMON_PROXY_LOCATION)
 	public static CommonProxy proxy;
+	
+	public static CreativeTabs TabTop = new TabTop(CreativeTabs.getNextID(), Reference.MOD_ID);
 	
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event){
