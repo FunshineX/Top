@@ -21,7 +21,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class BlockTop extends Block{
 	public BlockTop(int id, Material material) {
 		super(id, material);
-
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -29,5 +28,4 @@ public class BlockTop extends Block{
 	public void registerIcons(IconRegister register){
 		blockIcon = register.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
 	}
-
 }

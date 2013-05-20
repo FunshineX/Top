@@ -22,7 +22,7 @@ public class LocalizationHelper {
 		return fileName.substring(fileName.lastIndexOf("/")+1,fileName.lastIndexOf("."));
 	}
 	
-	public static String letLocalizationString(String key){
+	public static String getLocalizationString(String key){
 		return LanguageRegistry.instance().getStringLocalization(key);
 	}
 }
