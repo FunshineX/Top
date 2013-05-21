@@ -5,5 +5,9 @@
 	<entry key="tile.NewBlock.name">New Block</entry>
 	<entry key="item.BlackStick.name">Black Stick</entry>
 	<entry key="item.TopPickaxe.name">Top Pickaxe</entry>
+	<entry key="item.TopAxe.name">Top Axe</entry>
+	<entry key="item.TopHoe.name">Top Hoe</entry>
+	<entry key="item.TopSpade.name">Top Spade</entry>
+	<entry key="item.TopSword.name">Top Sword</entry>
 	<entry key="itemGroup.Top">Top</entry>
 </properties>
