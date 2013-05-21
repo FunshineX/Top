@@ -4,5 +4,6 @@
 	<comment>English (en_US) Localization File</comment>
 	<entry key="tile.NewBlock.name">New Block</entry>
 	<entry key="item.BlackStick.name">Black Stick</entry>
+	<entry key="item.TopPickaxe.name">Top Pickaxe</entry>
 	<entry key="itemGroup.Top">Top</entry>
 </properties>
