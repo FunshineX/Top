@@ -1,0 +1,20 @@
+[
+{
+  "modid": "Top",
+  "name": "Top",
+  "description": "The best tutorial",
+  "version": "0.0.1",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Martijn"
+  ],
+  "credits": "By Martijn",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
