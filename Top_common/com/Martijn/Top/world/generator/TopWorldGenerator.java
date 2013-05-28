@@ -30,16 +30,15 @@ public class TopWorldGenerator implements IWorldGenerator{
 	 */
 	
 	public void generateOverworld (World world, Random random, int chunkX, int chunkZ){
-		this.spawnOres(ModBlocks.NewBlock, world, random, chunkX, chunkZ, 16, 16, 5, 50, 0, 50);
-		//this.spawnOres(ModBlocks.2ndBlock, world, random, chunkX, chunkZ, 16, 16, 5, 50, 0, 50);
+		this.spawnOres(ModBlocks.NewBlock, Block.stone, world, random, chunkX, chunkZ, 16, 16, 5, 50, 0, 50);
 	}
 	
 	public void generateEnd (World world, Random random, int chunkX, int chunkZ){
-		
+		this.spawnOres(ModBlocks.NewBlock, Block.whiteStone, world, random, chunkX, chunkZ, 16, 16, 5, 50, 0, 50);
 	}
 
 	public void generateNether (World world, Random random, int chunkX, int chunkZ){
-	
+		this.spawnOres(ModBlocks.NewBlock, Block.netherrack, world, random, chunkX, chunkZ, 16, 16, 5, 50, 0, 50);
 	}
 
 	/**
@@ -60,12 +59,12 @@ public class TopWorldGenerator implements IWorldGenerator{
 	 * 
 	 */
 	
-	public void spawnOres(Block block, World world, Random random, int chunkX, int chunkZ, int XMax, int ZMax, int vainSize, int spawnChance, int YMin, int YMax){
+	public void spawnOres(Block block, Block blockReplaced, World world, Random random, int chunkX, int chunkZ, int XMax, int ZMax, int vainSize, int spawnChance, int YMin, int YMax){
 		for(int i = 0; i < spawnChance; i ++){
 			int posX = chunkX + random.nextInt(XMax);
 			int posZ = chunkZ + random.nextInt(ZMax);
 			int posY = YMin + random.nextInt(YMax-YMin);
-			(new WorldGenMinable(block.blockID, vainSize)).generate(world, random, posX, posY, posZ);
+			(new WorldGenMinable(block.blockID, vainSize, blockReplaced.blockID)).generate(world, random, posX, posY, posZ);
 		}
 	}
 	
