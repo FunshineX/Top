@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 
 public class ItemTop extends Item{
 	public ItemTop(int id){
-		super(id);
+		super(id-256);
 	}
 	
 	
