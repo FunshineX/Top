@@ -17,4 +17,7 @@ public class Reference {
 	public static final String COMMON_PROXY_LOCATION  = "com.Martijn.Top.core.proxy.CommonProxy";
 	public static final String CLIENT_PROXY_LOCATION  = "com.Martijn.Top.core.proxy.ClientProxy";
 	public static final String CHANNEL_NAME =MOD_ID;
+	public static final int NUMBEROFVAINS = 150;
+	public static final int HEIGHTORE = 128;
+	public static final int VAINSIZE = 30;
 }

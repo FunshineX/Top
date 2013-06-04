@@ -7,6 +7,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import com.Martijn.Top.block.ModBlocks;
 import com.Martijn.Top.configuration.ConfigurationHander;
 import com.Martijn.Top.core.handler.LocalizationHandler;
+import com.Martijn.Top.core.handler.TopFuelHandler;
 import com.Martijn.Top.core.proxy.CommonProxy;
 import com.Martijn.Top.creativetab.TabTop;
 import com.Martijn.Top.item.ModItems;
@@ -47,7 +48,8 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class Top {
 	
 	TopWorldGenerator worldGenerator = new TopWorldGenerator();
-	
+	TopFuelHandler fuelHandler = new TopFuelHandler();
+
 	@SidedProxy(
 			clientSide = Reference.CLIENT_PROXY_LOCATION,
 			serverSide = Reference.COMMON_PROXY_LOCATION)
@@ -66,7 +68,9 @@ public class Top {
 		ModItems.ItemInit();
 		
 		GameRegistry.registerWorldGenerator(worldGenerator);
+		GameRegistry.registerFuelHandler(fuelHandler);
 	}
+	
 	@Init
 	public void init(FMLInitializationEvent event){
 		
