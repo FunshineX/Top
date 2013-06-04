@@ -36,7 +36,7 @@ public class ModBlocks {
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.NewBlock,3,0), new Object[]{
 			"DDD","SSS","DDD",'D', Block.dirt, 'S', Block.stone
 		});
-		
+	
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.NewBlock, 2,0), new Object[]{
 			new ItemStack(Block.dirt), new ItemStack(Block.dirt), new ItemStack(Block.dirt), new ItemStack(Block.stone)
 		});
