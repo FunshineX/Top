@@ -1,8 +1,13 @@
 package com.Martijn.Top.item;
 
 import com.Martijn.Top.Top;
+import com.Martijn.Top.lib.Reference;
 import com.Martijn.Top.lib.Strings;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemHoe;
 
@@ -14,4 +19,10 @@ public class ItemTopHoe extends ItemHoe {
 		this.setUnlocalizedName(Strings.ITEMTOPHOE_NAME);
 	}
 
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void registerIcons(IconRegister register){
+		
+		itemIcon = register.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1));
+	}
 }
