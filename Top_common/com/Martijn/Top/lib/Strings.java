@@ -9,5 +9,6 @@ public class Strings {
 	public static final String ITEMTOPSWORD_NAME = "TopSword";
 	public static final String ITEMTOPHOE_NAME = "TopHoe";
 	public static final String ITEMTOPSPADE_NAME = "TopSpade";
+	public static final String BLOCKMETA_NAME = "BlockMeta";
 
 }

@@ -21,6 +21,7 @@ public class ConfigurationHander {
 			config.load();
 			
 			BlockIds.NEWBLOCK_ID = config.getBlock(Strings.NEWBLOCK_NAME, BlockIds.NEWBLOCK_ID_DEFAULT).getInt(BlockIds.NEWBLOCK_ID_DEFAULT);
+			BlockIds.BLOCKMETA_ID = config.getBlock(Strings.BLOCKMETA_NAME, BlockIds.BLOCKMETA_ID_DEFAULT).getInt(BlockIds.BLOCKMETA_ID_DEFAULT);
 			ItemIds.BLACKSTICK_ID = config.getItem(Strings.BLACKSTICK_NAME, ItemIds.BLACKSTICK_ID_DEFAULT).getInt(ItemIds.BLACKSTICK_ID_DEFAULT);
 			ItemIds.ITEMTOPPICKAXE_ID = config.getItem(Strings.ITEMTOPPICKAXE_NAME, ItemIds.ITEMTOPPICKAXE_ID_DEFAULT).getInt(ItemIds.ITEMTOPPICKAXE_ID_DEFAULT);
 			ItemIds.ITEMTOPAXE_ID = config.getItem(Strings.ITEMTOPAXE_NAME, ItemIds.ITEMTOPAXE_ID_DEFAULT).getInt(ItemIds.ITEMTOPAXE_ID_DEFAULT);

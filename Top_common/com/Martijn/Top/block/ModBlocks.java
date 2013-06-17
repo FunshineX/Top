@@ -23,13 +23,19 @@ public class ModBlocks {
 
 
 	public static Block NewBlock;
+	public static Block MetaBlock;
 	public static void BlocksInit(){
+		
 		NewBlock = new BlockNewBlock(BlockIds.NEWBLOCK_ID);
-
+		MetaBlock = new BlockMetaBlock(BlockIds.BLOCKMETA_ID);
+		
+		GameRegistry.registerBlock(MetaBlock, BlockItemTop.class, Strings.BLOCKMETA_NAME);
 		GameRegistry.registerBlock(NewBlock, Strings.NEWBLOCK_NAME);
 		
 		recipesInit();
 	}
+	
+	
 	
 	public static void recipesInit(){
 		
